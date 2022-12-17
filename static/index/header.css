@@ -1,0 +1,109 @@
+.header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #DAD7CD;
+    opacity: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
+    z-index: 100;
+    box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.66);
+}
+.header__titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.header__logo{
+    height: 150px;
+    margin-left: 170px;
+}
+.header__login-button{
+    margin-right: 170px;
+    height: 45px;
+    width: 170px;
+    border: 2px solid #75743C;
+    color: #75743C;
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: inherit;
+    transition: width .5s;
+    font-size: 1.2rem;
+}
+.fa-store{
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+.header__login-button:hover{
+    width: 200px;
+}
+@media (max-width: 1279px) {
+    .header__logo{
+        margin-left: 50px;
+    }
+    .header__login-button{
+        margin-right: 50px;
+    }
+    .header__searcher{
+        width: 300px;
+    }
+    .header__titulo{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 769px) {
+    .header__searcher{
+        margin: 0 20px 0 20px;
+    }
+    .header__logo{
+        height: 100px;
+        margin-left: 20px;
+    }
+    .header__login-button{
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+    .header__titulo{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 481px){
+    .header__searcher{
+        display: none;
+    }
+    .searcher__lupa--mobile{
+        display: inline-block;
+    }
+    .header__login-button{
+        width: 90px;
+    }
+    .searcher__button--mobile{
+        display: inline-block;
+        border: none;
+        background-color: inherit;
+        font-size: 1.15rem;
+    }
+    .searcher__button--mobile i{
+        color: #333;
+    }
+}
+
+@media (max-width: 481px){
+    .header__titulo{
+        font-size: 1.2rem;
+    }
+    .header__logo{
+        width: 70px;
+    }
+    .header__login-button{
+        font-size: 1rem;
+    }
+}

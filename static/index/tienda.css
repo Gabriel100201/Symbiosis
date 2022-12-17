@@ -1,0 +1,99 @@
+.tienda{
+    padding: 100px 170px 0px 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.tienda__titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.3rem;
+    color: #DAD7CD;
+    font-weight: bold;
+}
+.tienda__flecha{
+    margin-top: 20px;
+    width: 100px;
+}
+.tienda__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DAD7CD;
+    width: 70%;
+    padding: 60px 0px 40px 0px;
+    border-radius: 40px;
+}
+.container__img{
+    margin-top: 20px;
+    width: 80%;
+    outline: 4px solid #5C5B1C;
+    
+}
+.container__button{
+    margin-top: 40px;
+    background-color: #75743C;
+    color: #DAD7CD;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    transition: background-color .2s;
+}
+.container__button:hover{
+    background-color: #5C5B1C;
+}
+
+@media (max-width: 1279px) {
+    .tienda{
+        padding: 100px 100px 0px 100px;
+    }
+    .tienda__container{
+        width: 90%;
+        padding: 40px 0px 20px 0px;
+    }
+    .tienda__titulo{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+@media (max-width: 789px) {
+    .tienda{
+        padding: 100px 60px 0px 60px;
+    }
+    .tienda__container{
+        width: 100%;
+    }
+    .tienda__container{
+        width: 100%;
+        padding: 20px 0px 10px 0px;
+    }
+    .tienda__titulo{
+        font-size: 2rem;
+    }
+    .container__button{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 481px) {
+    .tienda__titulo{
+        font-size: 2rem;
+    }
+    .tienda__container{
+        background-color: transparent;
+        padding: 0px;
+    }
+    .container__img{
+        width: 100%;
+        outline: 3px solid #DAD7CD;
+    }
+    .container__button{
+        background-color: #DAD7CD;
+        color: #5C5B1C;
+    }
+    .container__button:hover{
+        background-color: #B8B5AB;
+    }
+}

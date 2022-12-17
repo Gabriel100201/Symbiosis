@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/base/reset.css">
+    <link rel="stylesheet" href="../static/base/header.css">
+    <link rel="stylesheet" href="../static/base/banner.css">
+    <link rel="stylesheet" href="../static/base/section-todos.css">
+    <link rel="stylesheet" href="../static/base/section-productos.css">
+    <link rel="stylesheet" href="../static/base/footer.css">
+    <script src="https://kit.fontawesome.com/07c964647a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/symbiosis-logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Symbiosis Store</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="../static/assets/symbiosis-logo.svg"></a>
+        <div class="header__searcher">
+            <input class="searcher__input" type="text" placeholder="¿Qué desea buscar?">
+            <button class="searcher__button"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+        </div>
+        <a href="screens/login.html"><button class="header__login-button">Iniciar Sesión</button></a>
+        <button class="searcher__button--mobile"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+    </header>
+
+    <main class="sections">
+        <section class="banner">
+            <h2 class="banner__titulo">Tu tienda de confianza</h1>
+            <h4 class="banner__subtitulo">Contamos con los mejores productos para mantener tu cuerpo sano</h2>
+            <a class="banner__link" href="#offert"><button class="banner__button">Ver Productos</button></a>
+        </section>
+        
+        <section class="section">
+            <div class="section__header">
+                <h2 class="section__titulo" id="offert">Frutos Secos</h2>
+            </div>
+            <div class="sections__products-container sections__products-container-1">
+
+                <!-- AQUI VAN LOS PRODUCTOS -->
+                <!-- CADA DIV CON LA CLASE: "sections__producto" ES UN PRODUCTO -->
+
+                <div class="sections__producto">
+                    <img class="producto__img" src="../static/assets/pasas.jpg">
+                    <h3 class="producto__nombre">Pasas de Uva</h3>
+                    <h3 class="producto__precio">250 AR / 100g</h3>
+                    <a class="producto__link" href="https://api.whatsapp.com/send?phone=+5492644601971&text=Hola!,%20quiero%20hacerte%20una%20consulta%20por%20tu%20anuncio:%20(Nombre del producto)%20,%20publicado%20en%20Symbiosis.com">
+                        <h3 class="link__titulo">Consultar</h3>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <h2 class="section__titulo">Categoria 2</h2>
+            </div>
+            <div class="sections__products-container sections__products-container-2">
+                <!-- AQUI VAN LOS PRODUCTOS -->
+
+                <div class="sections__producto">
+                    <img class="producto__img" src="../static/assets/pasas.jpg">
+                    <h3 class="producto__nombre">Pasas de Uva</h3>
+                    <h3 class="producto__precio">250 AR / 100g</h3>
+                    <a class="producto__link" href="https://api.whatsapp.com/send?phone=+5492644601971&text=Hola!,%20quiero%20hacerte%20una%20consulta%20por%20tu%20anuncio:%20(Nombre del producto)%20,%20publicado%20en%20Symbiosis.com">
+                        <h3 class="link__titulo">Consultar</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <h2 class="section__titulo">Categoria 3</h2>
+            </div>
+            <div class="sections__products-container sections__products-container-3">
+                <!-- AQUI VAN LOS PRODUCTOS -->
+                
+                <div class="sections__producto">
+                    <img class="producto__img" src="../static/assets/pasas.jpg">
+                    <h3 class="producto__nombre">Pasas de Uva</h3>
+                    <h3 class="producto__precio">250 AR / 100g</h3>
+                    <a class="producto__link" href="https://api.whatsapp.com/send?phone=+5492644601971&text=Hola!,%20quiero%20hacerte%20una%20consulta%20por%20tu%20anuncio:%20(Nombre del producto)%20,%20publicado%20en%20Symbiosis.com">
+                        <h3 class="link__titulo">Consultar</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__img-container">
+            <img class="img-container__img" src="../static/assets/symbiosis.svg">
+        </div>
+
+        <div class="footer__buttons-container">
+            <h4 class="buttons-container__titulo">Contactanos</h4>
+            <div class="buttons-container__buttons">
+                <button class="buttons-container__button"><a class="button__link" href="https://api.whatsapp.com/message/VV4H24KXIDK4A1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></button>
+                <button class="buttons-container__button"><a class="button__link" href="https://t.me/Symbiosis_tienda_bot"><i class="fa-brands fa-telegram"></i></a></button>
+            </div>
+        </div>
+
+
+        <div class="footer__lista-bloque">
+            <ul class="lista-bloque__lista">
+                <a href="#">
+                    <li class="lista__el">Para realizar su consulta:</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Asistencia Personalizada por Whatsapp</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Asistencia automatizada por Telegram</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Ubicación</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Nosotros</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="footer__desarrollo">
+            <h4 class="desarollo__texto">Desarrollado durante la JAM - Equipo . 2022</h4>
+        </div>
+
+    </footer>
+</body>
+</html>

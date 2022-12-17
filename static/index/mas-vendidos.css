@@ -1,0 +1,139 @@
+.mas-vendidos{
+    padding: 100px 170px 150px 170px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5C5B1C;
+}
+.mas-vendidos__titulo{
+    font-size: 2.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DAD7CD;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.contenido__desc{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DAD7CD;
+    font-weight: 500;
+    text-align: center;
+}
+.mas-vendidos__fila{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.fila__producto{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.producto__imagen{
+    width: 40%;
+    border-radius: 50%;
+    border: 8px double #DAD7CD;
+}
+
+.contenido__nombre{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DAD7CD;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.contenido__precio{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DAD7CD;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 1279px) {
+    .mas-vendidos{
+        padding: 100px 100px 150px 100px;
+    }
+    .contenido__nombre{
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .contenido__desc{
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .contenido__precio{
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .producto__imagen{
+        width: 45%;
+    }
+}
+@media (max-width: 950px) {
+    .mas-vendidos__fila{
+        flex-direction: column;
+    }
+    .fila__producto{
+        width: 100%;
+    }
+    .producto__imagen{
+        width: 35%;
+    }
+    .contenido__nombre{
+        font-size: 2rem;
+    }
+    .contenido__desc{
+        font-size: 1.7rem;
+    }
+    .contenido__precio{
+        font-size: 1.7rem;
+    }
+    .mas-vendidos__titulo{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+@media (max-width: 769px) {
+    .mas-vendidos__titulo{
+        font-size: 2.2rem;
+    }
+    .mas-vendidos{
+        padding: 100px 60px 150px 60px;
+    }
+    .producto__imagen{
+        width: 40%;
+    }
+    .contenido__nombre{
+        font-size: 1.7rem;
+    }
+    .contenido__desc{
+        font-size: 1.5rem;
+    }
+    .contenido__precio{
+        font-size: 1.5rem;
+    }
+    .fila__producto{
+        justify-content: space-between
+    }
+}
+@media (max-width: 481px) {
+    .producto__imagen{
+        width: 50%;
+    }
+    .contenido__nombre{
+        font-size: 1.2rem;
+    }
+    .contenido__desc{
+        font-size: 1.2rem;
+    }
+    .contenido__precio{
+    font-size: 1.2rem;        
+    }
+}
